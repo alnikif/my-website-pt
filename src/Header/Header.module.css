@@ -1,0 +1,11 @@
+.header{
+    width: 100%;
+    /* min-height:100vh; */
+    background-image: url(./HeaderImages/kettlebell-workout-1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content{
+    padding: 0 15px 15px;
+    
+}

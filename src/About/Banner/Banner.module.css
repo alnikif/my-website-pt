@@ -1,0 +1,61 @@
+button:active, button:focus{
+    outline: none;
+}
+button{
+    border:none;
+}
+.container{
+    position: relative;
+    height: 500px; 
+    padding-top:4%; 
+    background-color: #0C0F16;
+   
+}
+.btn{
+    position: absolute;
+    top:0;
+    height: 75%;
+    width: 30px;
+    font-size: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    color: orangered;
+}
+.rightBtn{
+    right: 0;
+
+}
+.content{
+    padding: 15px 30px;
+    height: 250px;
+    width: 65%;
+    margin-left: 10%;
+    opacity: .9;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bannerText{
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.header{
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:normal;
+    margin-top: 0;
+}
+
+.bannerBtn{
+    width: 30%;
+    height: 25px;
+    color: orangered;
+    background-color: #0C0F16;
+    border: 1px solid orangered;
+    margin-left: 35%;
+   
+}

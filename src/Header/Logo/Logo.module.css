@@ -1,0 +1,13 @@
+.logo{
+    display: inline-block;
+    margin: 0;
+    border: none;
+    color: orangered;
+    border-bottom: 1px solid white;
+    position: absolute;
+    margin-left: 45%;
+    padding: 5px;
+    padding-top: 7px;
+   
+    
+}

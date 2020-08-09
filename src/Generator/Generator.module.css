@@ -1,0 +1,44 @@
+.container{
+   background-image:url('./images/g1.jpg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 100%;
+   min-height: 450px;
+ 
+}
+p{
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-shadow: 0 1.5px 0 black;
+}
+.formContainer{
+    background: #0C0F16;
+    border:none;
+    height: 350px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    opacity: .7;
+    padding-top: 55px;
+}
+.inpt{
+    margin-top: 15px;
+    border: none;
+    color: #aaa;
+    display: inline-block;
+    width: 65%;
+    height: 25px;
+    padding-left: 10px;
+}
+.btn{
+    margin-top: 15px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    font-size: 0.6em;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
