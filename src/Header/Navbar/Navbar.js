@@ -12,9 +12,6 @@ class Navbar extends Component {
         return (
             <div className={styles.navbar}>
                 <div className={styles.nav}>
-                    <input className={styles.nav__check} type="checkbox" id="showmenu"/>
-                    <label className={styles.nav__showmenu} htmlFor="showmenu">&#9776;</label>
-                    <label className={styles.nav__back} htmlFor="showmenu"></label>
                     <ul className={styles.menu}>
                         <li><a className={styles.menu__item} href="/">Главная</a></li>
                         <li><a className={styles.menu__item} href="/">О мне</a></li>

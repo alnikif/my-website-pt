@@ -24,14 +24,11 @@ h4{
     color: orangered;
     text-shadow: 0 1.5px 0 black;
 }
-.whiteText{
-    opacity: .7;
-}
 
 .orangeText{
     padding: 2% 0;
     color: orangered;
-    opacity: .9; 
+   
 }
 .btn{
     margin-top: 2%;

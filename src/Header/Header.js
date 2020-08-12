@@ -7,9 +7,12 @@ class Header extends Component {
     render() {
         return (
             <div className={styles.header}>
+                <div className={styles.blackWraper}>
                 <div className={styles.content}>
                     <HeaderText/>
                 </div>
+                </div>
+               
             </div>
         )
     }

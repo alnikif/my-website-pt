@@ -4,7 +4,7 @@ import styles from './Logo.module.css'
 class Logo extends Component {
     render() {
         return (
-            <h3 className={styles.logo}>Александр Штурм</h3>
+            <div className={styles.logo}>Александр Штурм</div>
         )
     }
 }
