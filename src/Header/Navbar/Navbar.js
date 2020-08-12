@@ -2,15 +2,27 @@ import React, { Component } from 'react';
 import styles from './Navbar.module.css'
 
 class Navbar extends Component {
-    // constructor(props){
-    //     super(props);
-    //     this.state={
-    //         burgerSymbol:'&#9776;'
-    //     }
-    // }
+    constructor(props){
+        super(props);
+        this.state={
+            symbol:'&equiv;'
+        }
+    }
+    createMarkUp=()=>{
+        return {__html: this.state.symbol};
+    }
+    menuSymbol=()=>{
+        return <div className={styles.navSymbol} dangerouslySetInnerHTML={this.createMarkUp()}/>
+    }
+    handleClick=e=>{
+        this.state.symbol==='&equiv;' ? this.setState({symbol:'&times;'}) : this.setState({symbol:'&equiv;'})
+    }
     render() {
         return (
-            <div className={styles.navbar}>
+            <div className={styles.navbar} onClick={this.handleClick}>
+               
+                   {this.menuSymbol()}
+                
                 <div className={styles.nav}>
                     <ul className={styles.menu}>
                         <li><a className={styles.menu__item} href="/">Главная</a></li>

@@ -1,3 +1,14 @@
-.navbar{
+.nav{
     display: none;
+}
+.navBar{
+    margin: 0;
+}
+.navSymbol{
+    color:orangered;
+    font-size: 40px;
+    font-weight: 300;
+    position: absolute;
+    left: 15px;
+
 }
