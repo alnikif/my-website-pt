@@ -1,8 +1,31 @@
 .nav{
-    display: none;
+   position: absolute;
+   width: 50%;
+   height: 100vh;
+   background-color: black;
+   opacity: .6;
+}
+.menu{
+    box-sizing: border-box;
+    padding-left: 0;
+    list-style-type: none;
+    padding-top: 25px;
+}
+li{
+    padding: 7px ;
+    padding-left: 20px;
+}
+.menu_item{
+    color: white;
+    text-decoration-line: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+li:active{
+    background-color: orangered;
 }
 .navBar{
-    margin: 0;
+    margin: 0; 
 }
 .navSymbol{
     color:orangered;
@@ -10,5 +33,4 @@
     font-weight: 300;
     position: absolute;
     left: 15px;
-
 }

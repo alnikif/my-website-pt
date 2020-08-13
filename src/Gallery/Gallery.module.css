@@ -24,15 +24,14 @@ button{
     cursor: pointer;
     outline: none;
     color: orangered;
+    opacity: .6;
 }
 .rightBtn{
-    right: 0;
-
+    right:0;
 }
 .content{
-   
     height: 250px;
-   margin: 0 40px;
+    margin: 0 40px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -40,25 +39,27 @@ button{
     font-size: medium;
     color: white;
     text-align: center;
-    padding: 0 10px 10px 0;
-   
+    padding: 20px 10px 10px;
 }
 .header{
     color:white;
     text-align: center;
     text-transform: uppercase;
     font-weight:normal;
-    margin-top: 0;
 }
 
 .bannerBtn{
     display: block;
-    width: 30%;
-    height: 25px;
-    color: orangered;
-    background-color: #0C0F16;
-    border: 1px solid orangered;
-    margin-left: 35%;
+    margin-top: 15px;
+    margin: 0 auto;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    font-size: 0.6em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    
 }
 .orangeText{
     color: orangered;

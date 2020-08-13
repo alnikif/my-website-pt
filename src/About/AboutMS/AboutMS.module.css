@@ -31,11 +31,15 @@ h4{
    
 }
 .btn{
-    margin-top: 2%;
-    width: 30%;
-    height: 25px;
-    color: orangered;
-    background-color: #0C0F16;
-    border: 1px solid orangered;
-    margin-left: 35%;
+    display: block;
+    margin: 0 auto;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    font-size: 0.6em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 10px;
+    opacity: .7;
 }

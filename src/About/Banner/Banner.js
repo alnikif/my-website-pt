@@ -35,6 +35,7 @@ export default class Banner extends Component {
       
         return (
             <div className={styles.container}>
+                <span className={styles.mainHeader}>Выбери для себя направление</span>
                 <button onClick={this.handleClickLeft} className={classnames(styles.btn) }>
                     <i className='fa fa-angle-left'/>
                 </button>

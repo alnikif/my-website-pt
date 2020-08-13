@@ -3,33 +3,36 @@
    background-size: contain;
    background-repeat: no-repeat;
    width: 100%;
-   min-height: 450px;
+   min-height: 400px;
+   position: relative;
  
 }
 p{
     text-align: center;
     margin: 0;
+    padding-top: 25px;
     color: white;
     text-shadow: 0 1.5px 0 black;
 }
 .formContainer{
-    background: #0C0F16;
+    background-color:rgba(0, 0, 0, .7);
+    opacity: .9;
     border:none;
-    height: 350px;
-    width: 300px;
+    min-height: 380px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     padding: 10px;
-    opacity: .7;
-    padding-top: 55px;
+    /* padding-top: 55px; */
 }
 .inpt{
+    margin: 0 auto;
+    display: block;
     margin-top: 15px;
     border: none;
     color: #aaa;
-    display: inline-block;
-    width: 65%;
-    height: 25px;
+    width: 50%;
+    height: 30px;
     padding-left: 10px;
 }
 .btn{
@@ -41,4 +44,15 @@ p{
     padding: 10px 40px;
     text-transform: uppercase;
     font-weight: normal;
+}
+.treningList{
+    width: 90%;
+    height: 370px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.timeTest{
+height: 230px;
 }
