@@ -24,13 +24,10 @@
     margin-top: 20px;
 }
 .btnOr{
-    /* color: orangered; */
     color:white;
     background-color: orangered;
     border: none;
     font-weight: normal;
- 
-    /* border-color: orangered; */
     margin-top: 60px;
     margin-bottom: 15px;
 }

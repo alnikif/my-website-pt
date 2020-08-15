@@ -1,0 +1,84 @@
+.container{
+    width: 100%;
+    background-image: url('./images/bg-1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 370px;
+}
+.content{
+    position: relative;
+    background-color:rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 370px;
+}
+.content:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.leftSide{
+    position: absolute;
+    top:60px;
+    width: 38%;
+    
+}
+.rightSide{
+    position: absolute;
+    top:60px;
+    right: 0px;
+    width: 38%;
+}
+.leftSide i{
+    float: left;
+}
+.rightSide i{
+    float: right;
+}
+
+p{
+    padding: 0;
+    font-size: 14px;
+    text-shadow: 0 1px 0 black; 
+    
+}
+.strong{
+    text-align: end;
+}
+.strong p, .fastSkill p, .nutrition p{
+    text-align: start;
+}
+
+.fastStart p{
+    text-align: end;
+}
+
+.weightLoss{
+  
+}
+.nutrition{
+   
+    
+   
+}
+.title{
+    color: white;
+    text-shadow: 0 1px 0 black;  
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 17px;
+  
+}
+.grayBlock{
+    height: 75px;
+    padding: 5px;
+    background-color:rgba(192, 192, 192, .4);
+    color: orangered;
+    
+}
+.orangeBlock{
+    height: 75px;
+    padding: 5px;
+    background-color:rgba(255, 69, 0, .4);
+    color: silver;
+
+}

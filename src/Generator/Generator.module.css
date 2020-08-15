@@ -1,9 +1,9 @@
 .container{
    background-image:url('./images/g1.jpg');
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
    width: 100%;
-   min-height: 400px;
+   min-height: 370px;
    position: relative;
  
 }
@@ -18,12 +18,12 @@ p{
     background-color:rgba(0, 0, 0, .7);
     opacity: .9;
     border:none;
-    min-height: 380px;
+    min-height: 370px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    padding: 10px;
-    /* padding-top: 55px; */
+    padding: 10px 10px 0;
+    
 }
 .inpt{
     margin: 0 auto;
@@ -52,7 +52,4 @@ p{
     position: absolute;
     top: 0;
     left: 5%;
-}
-.timeTest{
-height: 230px;
 }

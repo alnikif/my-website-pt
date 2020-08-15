@@ -43,9 +43,6 @@ export default class Generator extends Component {
                    </ul>
                 </div>
                 </div>
-               <div className={styles.timeTest}>
-                 
-               </div>
             </div>
 
         )

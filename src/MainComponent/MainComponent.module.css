@@ -3,7 +3,6 @@
     min-height: 100vh;  
 }
 .topBar{
-    /* padding: 15px; */
     position: sticky;
     top:0;
     z-index: 999;

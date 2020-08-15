@@ -4,7 +4,8 @@ import Logo from '../Header/Logo/Logo';
 import Header from '../Header/Header';
 import About from '../About/About';
 import Gallery from '../Gallery/Gallery';
-import Generator from '../Generator/Generator'
+import Generator from '../Generator/Generator';
+import Advantage from '../Advantage/Advantage';
 import styles from './MainComponent.module.css';
 
 class MainComponent extends Component {
@@ -19,8 +20,12 @@ class MainComponent extends Component {
                 <About />
                 <Gallery />
                 <Generator />
-                
+                <Advantage />
+            
+            
+              
             </div>
+            
         )
     }
 }
