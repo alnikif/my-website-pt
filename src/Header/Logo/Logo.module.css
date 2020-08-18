@@ -3,13 +3,11 @@
     margin: 0;
     border: none;
     color: orangered;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid gray;
     position: absolute;
     margin-left: 45%;
     padding: 5px;
     padding-top: 7px;
     font-size: 20px;
     font-weight: unset;
-   
-    
 }

@@ -6,6 +6,7 @@ import About from '../About/About';
 import Gallery from '../Gallery/Gallery';
 import Generator from '../Generator/Generator';
 import Advantage from '../Advantage/Advantage';
+import Footer from '../Footer/Footer'
 import styles from './MainComponent.module.css';
 
 class MainComponent extends Component {
@@ -21,7 +22,7 @@ class MainComponent extends Component {
                 <Gallery />
                 <Generator />
                 <Advantage />
-            
+                <Footer />
             
               
             </div>
