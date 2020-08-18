@@ -1,23 +1,27 @@
+*{
+    box-sizing: border-box;
+}
 .container{
     background-color: #0C0F13;
-    height: 300px;
+    height: 330px;
+    position: relative;
 }
 
+
 .form{
-    width: 65%;
-    display: inline-block;
+    position: absolute;
+    top:0;
+    left: 10px;
+    width: 60%;
     height: 300px;
-    
 }
 .inpt{
-    display: block;
     margin-bottom: 5px;
     border: 1px solid gray;
     background-color: black;
     color: white;
-    width: 60%;
+    width: 75%;
     height: 30px;
-    /* padding-left: 10px; */
     font-size: 10px;
 }
 .btn{
@@ -28,11 +32,28 @@
     padding: 10px 10px;
     text-transform: uppercase;
     font-weight: normal;
+    margin-left: 50%;
 }
 
 .adress{
-    width: 35%;
-    display: inline-block;
-    background-color: gray;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 40%;
+    background-color: white;
     height: 300px;
+}
+i{
+    color: orangered;
+    font-size: 25px;
+    margin-right: 5px;
+}
+.contactText{
+    color: black;
+    font-size: 12px;
+    text-shadow: none;
+    padding: 5px;
+    width: 80%;
+    margin: 30px auto;
+    
 }
