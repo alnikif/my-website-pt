@@ -32,7 +32,7 @@ class Navbar extends Component {
                         <li><a className={styles.menu_item} href="/">Галерея</a></li>
                         <li><a className={styles.menu_item} href="/">Отзывы</a></li>
                         <li><a className={styles.menu_item} href="/">Генератор</a></li>
-                        <li><a className={styles.menu_item} href="/">Контакты</a></li>
+                        <li><a onClick={this.props.onScroll} className={styles.menu_item} href="/">Контакты</a></li>
                     </ul>
                 </div>
             </div>

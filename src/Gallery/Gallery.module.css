@@ -46,6 +46,7 @@ button{
     text-align: center;
     text-transform: uppercase;
     font-weight:normal;
+    font-size: 18px;
 }
 
 .bannerBtn{
@@ -53,13 +54,13 @@ button{
     margin-top: 15px;
     margin: 0 auto;
     background-color: orangered;
-    border: none;
-    color: #fff;
+    border:none;
+    color: white;
     font-size: 0.6em;
     padding: 10px 20px;
     text-transform: uppercase;
     font-weight: normal;
-    
+    border-radius: 5px;
 }
 .orangeText{
     color: orangered;

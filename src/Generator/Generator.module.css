@@ -1,49 +1,63 @@
 .container{
-   background-image:url('./images/g1.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
    width: 100%;
    min-height: 370px;
    position: relative;
- 
 }
-p{
+.darkWraper{
+    height:370px ;
+    background-color:#0C0F16;
+}
+
+.text{
     text-align: center;
     margin: 0;
-    padding-top: 25px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 black;
+    padding: 70px 20px;
     color: white;
-    text-shadow: 0 1.5px 0 black;
+}
+.content{
+    display: none;
 }
 .formContainer{
-    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
     opacity: .9;
     border:none;
     min-height: 370px;
-    width: 100%;
     text-align: center;
-    margin: 0 auto;
-    padding: 10px 10px 0;
+    width: 1px;
+    padding: 40px 10px 0;   
     
+}
+label{
+    color:white;
 }
 .inpt{
     margin: 0 auto;
     display: block;
     margin-top: 15px;
     border: none;
-    color: #aaa;
+    color: white;
     width: 50%;
     height: 30px;
     padding-left: 10px;
 }
 .btn{
-    margin-top: 15px;
+    margin: 15px auto;
+    width: 30%;
     background-color: orangered;
+    margin-left: 35%;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 0.6em;
-    padding: 10px 40px;
+    padding: 10px 20px;
     text-transform: uppercase;
     font-weight: normal;
+    display: block;
+    border-radius: 5px;
 }
 .treningList{
     width: 90%;
@@ -52,4 +66,42 @@ p{
     position: absolute;
     top: 0;
     left: 5%;
+}
+.showBtn{
+    position: absolute;
+    top:50%;
+    left: -35px;
+    transform: rotate(-90deg);
+    width: 80px;
+    height: 25px;
+    border-radius:25% 25% 0 0; 
+    color: orangered;
+    background-color: white;
+}
+
+.block{
+    width: 30%;
+    height: 150px;
+    display: inline-block;
+}
+
+
+.sliderOpen .text, .sliderOpen .block{
+    display:none;
+}
+.sliderOpen .content{
+    display:block;
+}
+.sliderOpen .formContainer{
+    animation-name: slideOpen;
+    animation-duration:700ms;
+    animation-fill-mode: forwards;
+}
+@keyframes slideOpen {
+    0%{
+        width: 1px;
+    }
+    100%{
+        width: 360px;
+    }
 }

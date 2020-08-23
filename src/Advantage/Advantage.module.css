@@ -34,7 +34,7 @@
     float: right;
 }
 .text{
-    padding: 10px 10px;
+    padding: 5px 10px;
     font-size: 12px;
     display: inline-block;
     width: 85%;
@@ -42,6 +42,7 @@
     margin-left: 15%;
     text-align: end;
     text-shadow: none;
+    color: white;
    
 }
 .strong p, .fastSkill p, .nutrition p{
@@ -52,7 +53,8 @@
 
 .title{
     color: white;
-    opacity: .9;
+    margin: 0;
+    text-align: center;
     padding: 10px 0;
     font-weight: lighter;
     font-size: 17px;
@@ -64,12 +66,8 @@
 .orangeBlock{
 
     background-color: orangered; 
-    opacity: .9;
+    /* opacity: .9; */
     
-}
-.grayBlock{
-  
-
 }
 .iconWraper{
     position: relative;
@@ -82,7 +80,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    opacity: .9;
+    /* opacity: .9; */
     background-size: contain;
     background-repeat: no-repeat;
     height: 75px;
