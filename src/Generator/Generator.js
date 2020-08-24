@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Generator.module.css';
 import classNames from 'classnames';
-
+import { Formik, Field, Form } from "formik";
 
 export default class Generator extends Component {
     constructor(props){
@@ -13,7 +13,6 @@ export default class Generator extends Component {
             atValue:'top'
         }
     }
-  
     handleSlideClick=e=>{
         e.preventDefault();
         this.setState({
@@ -38,47 +37,56 @@ export default class Generator extends Component {
     render() {
         return (
             <div ref={this.props.refGenerator} className={styles.container}>
-                <div className={classNames(styles.darkWraper, {[styles.sliderOpen]:this.state.isSliderOpen})}>
-
+                <div className={classNames(styles.darkWraper,{[styles.sliderOpen]:this.state.isSliderOpen})}>
                     <div className={classNames(styles.leftBlock, styles.block)}>
                         <p className={styles.blockText}></p>
                     </div>
                     <div className={classNames(styles.rightBlock, styles.block)}></div>
-                  
                     <div className={styles.formContainer}>
                         <button className={styles.showBtn} onClick={this.handleSlideClick}>
                             Generator
                         </button>
                         <div className={styles.content}>
-                            <form action="">
-                                <label>
-                                    Выберите направление:<br/>
-                                    <select value={this.state.sportValue} onChange={this.handleChangeType}>
-                                        <option value="athleticism">Атлетизм</option>
-                                        <option value="powerlifting">Пауэрлифтинг</option>
-                                    </select>    
-                                </label><br/>
-                                <label>
-                                    {this.state.sportValue==='powerlifting' ?  <select value={this.state.   plValue} onChange={this.handleChangePl}>
-                                        <option value="squat">Приседания со штангой</option>
-                                        <option value="deadlift">Становая тяга</option>
-                                        <option value="bench-press">Жим лёжа</option>
+                            <Formik 
+                                initialValues={{
+                                    test:'',
+                                    sportType:'pl'
+                                }}
+                                onSubmit={()=>{
+                                   
+                                }}
+                                render={({
+                                    values,
+                                    errors,
+                                    touched,
+                                    handleChange,
+                                    handleBlur,
+                                    handleSubmit
+                                })=>{
+                                    handleChange=e=>{(
+                                      
+                                      console.log(values.powerlifting)
+                                        
+                                        
+                                    )}
+                                    return (
+                                        <Form >
+                                            <Field name='test' type='text'/>
+                                  
+                                                <Field as="select" name="sportType">
+                                                    <option value="pl">Powerlifting</option>
+                                                    <option value="atl">Athleticism </option>
+                                                </Field>
+                                           
+                                               
+                                            <button onClick={handleChange} type='submit' className={styles.btn}>Click</button>
+                                    </Form>  
 
-                                    </select> : <select value={this.state.atValue} onChange={this.handleChangeAt}>
-                                        <option value="top">Верх тела</option>
-                                        <option value="bottom">Ноги</option>
-                                    </select>}
-                                     
-                                </label>
-                                    
-                                    <input className={styles.inpt} type="number" placeholder='Жим лёжа'/>
-                                    <input className={styles.inpt} type="number" placeholder='Приседания со штангой'/>
-                                    <input className={styles.inpt} type="number" placeholder='Укажите Ваш вес'/>
-                                    <input className={styles.inpt} type="number" placeholder='Жим лёжа'/>
-                                    <input className={styles.inpt} type="number" placeholder='Жим лёжа'/>
-
-                            </form>
-                            <button className={styles.btn} onClick={this.handleClick}>Готово!</button>
+                                    )
+                                }}
+                                />
+                            
+                        
                         </div>
                             {/* <div className={styles.treningList} style={{display:this.state.trList}}>
                                 <ul>

@@ -1,60 +1,85 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .container{
     background-color: #0C0F13;
-    height: 330px;
+    height: 350px;
     position: relative;
 }
 .form{
-    position: absolute;
-    top:0;
-    left: 10px;
-    width: 60%;
-    height: 300px;
+    display: inline-block;
+    width: 50%;
+    height: 200px;
+   
 }
 .inpt{
     margin-bottom: 5px;
-    border: 1px solid gray;
-    background-color: black;
-    color: white;
-    width: 75%;
+    border: none;
+    background-color: white;
+    color: black;
+    width: 90%;
     height: 30px;
-    font-size: 10px;
+    font-size: 11px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+.textarea{
+    height: 74px;
 }
 .btn{
-    border: 1px solid orangered;
-    color: orangered;
-    background-color: #0C0F13;
+    background-color: orangered;
+    color: white;
     font-size: 0.5em;
     padding: 10px 10px;
     text-transform: uppercase;
     font-weight: normal;
-    margin-left: 50%;
     border-radius: 5px;
+    margin-left: 5px;
 }
 
 .adress{
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 40%;
+    width: 50%;
     background-color: white;
-    height: 300px;
+    height: 145px;
+    float: right;
+}
+.adres::after{
+    clear: both;
+    display: block;
+    content: '';
 }
 i{
     color: orangered;
     font-size: 25px;
-    margin-right: 5px;
+    padding-right: 5px;
+   
 }
 .contactText{
     color: black;
     font-size: 12px;
     text-shadow: none;
-    padding: 5px;
-    width: 80%;
-    margin: 30px auto;
+    padding:25px 25px 0;
+  
+    
+   
 }
 .footerText{
     color:white;
+    padding-left: 5px;
+   
+   
+   
+}
+.copyright{
+    margin-top: 15px;
+    height: 15px;
+    width: 100%;
+    background-color: #0C0F13; 
+}
+.copyrightText{
+    color:white;
+    font-size: 12px;
+    text-align: center;
 }

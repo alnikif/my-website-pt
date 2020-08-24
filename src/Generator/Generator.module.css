@@ -19,6 +19,9 @@
 .content{
     display: none;
 }
+/*
+form styles
+*/
 .formContainer{
     position: absolute;
     top:0;
@@ -45,6 +48,10 @@ label{
     height: 30px;
     padding-left: 10px;
 }
+/* .atBenchPress:active:after{
+    content: 'sdfkdjfh';
+    background-color: paleturquoise;
+} */
 .btn{
     margin: 15px auto;
     width: 30%;
@@ -59,6 +66,7 @@ label{
     display: block;
     border-radius: 5px;
 }
+
 .treningList{
     width: 90%;
     height: 370px;

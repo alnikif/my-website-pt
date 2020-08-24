@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
-import styles from './Logo.module.css'
+import React from 'react';
+import styles from './Logo.module.css';
 
-class Logo extends Component {
-    render() {
-        return (
-            
-                <div className={styles.logo}>Александр Штурм</div>
-           
-           
-        )
+const Logo=()=> {
+   const scrollToTop=()=>{
+        window.scrollTo({top:0, behavior:'smooth'});
     }
+    return (
+        <div onClick={scrollToTop} className={styles.logo}>Александр Штурм</div>
+    )
 }
 
 export default Logo

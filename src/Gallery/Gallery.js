@@ -39,15 +39,15 @@ export default class Gallery extends Component {
     render() {
       
         return (
-            <div className={styles.mainContainer}>
-                <h3 className={styles.header}>Реальные люди - <span className={styles.orangeText}>реальные результаты !</span> </h3>
+            <div ref={this.props.refGallery} className={styles.mainContainer}>
+                <h3 className={styles.headerText}>Реальные люди - <span className={styles.orangeText}>реальные результаты !</span> </h3>
                 <div className={styles.container}>
-                <button onClick={this.handleClickLeft} className={classnames(styles.btn) }>
-                    <i className='fa fa-angle-left'/>
-                </button>
-                <button onClick={this.handleClickRight} className={classnames(styles.rightBtn, styles.btn) }>
-                    <i className='fa fa-angle-right'/>
-                </button>
+                    <button onClick={this.handleClickLeft} className={classnames(styles.btn) }>
+                        <i className='fa fa-angle-left'/>
+                    </button>
+                    <button onClick={this.handleClickRight} className={classnames(styles.rightBtn, styles.btn) }>
+                        <i className='fa fa-angle-right'/>
+                    </button>
                     <div className={styles.content} style={{backgroundImage: `url(${slideContent[this.state.currentSlide].src})`}}>
                 </div>
                
