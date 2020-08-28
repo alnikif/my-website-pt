@@ -7,31 +7,13 @@ export default class Generator extends Component {
     constructor(props){
         super(props);
         this.state={
-            isSliderOpen:false,
-            sportValue:'athleticism',
-            plValue:'squat',
-            atValue:'top'
+            isSliderOpen:false
         }
     }
     handleSlideClick=e=>{
         e.preventDefault();
         this.setState({
             isSliderOpen:!this.state.isSliderOpen
-        })
-    }
-    handleChangeType=e=>{
-        this.setState({
-            sportValue:e.target.value
-        })
-    }
-    handleChangePl=e=>{
-        this.setState({
-            plValue:e.target.value
-        })
-    }
-    handleChangeAt=e=>{
-        this.setState({
-            atValue:e.target.value
         })
     }
     render() {
@@ -88,20 +70,7 @@ export default class Generator extends Component {
                             
                         
                         </div>
-                            {/* <div className={styles.treningList} style={{display:this.state.trList}}>
-                                <ul>
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
-                                    <li>5</li>
-                                    <li>6</li>
-                                    <li>7</li>
-                                    <li>8</li>
-                                    <li>9</li>
-                                </ul>
-                            </div> */}
+                         
                     </div>
                 </div>    
             </div>

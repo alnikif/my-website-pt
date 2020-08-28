@@ -4,7 +4,6 @@
 }
 .banner{
     box-sizing: border-box;
-    display: block;
     background-image: url('./image/1.JPG');
     width: 100%;
     min-height:400px;

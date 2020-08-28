@@ -15,6 +15,7 @@ class MainComponent extends Component {
         this.refGenerator=React.createRef();
         this.refContact=React.createRef();
         this.refGallery=React.createRef();
+        this.refAbout=React.createRef();
        
     }
     scrollToContact=()=>{
@@ -36,15 +37,27 @@ class MainComponent extends Component {
             behavior:'smooth'
         })
     }
+    scrollToAbout=()=>{
+        window.scrollTo({
+            top:this.refAbout.current.offsetTop,
+            behavior:'smooth'
+        })
+    }
+    scrollToTop=()=>{
+        window.scrollTo({
+            top:0,
+            behavior:'smooth'
+        })
+    }
     render() {
         return (
             <div className={styles.container}>
                 <div className={styles.topBar}>
                     <Logo />
-                    <Navbar onScrollGenerator={this.scrollToGenerator} onScrollContact={this.scrollToContact} onScrollGallery={this.scrollToGallery} />
+                    <Navbar onScrollTop={this.scrollToTop} onScrollAbout={this.scrollToAbout} onScrollGenerator={this.scrollToGenerator} onScrollContact={this.scrollToContact} onScrollGallery={this.scrollToGallery} />
                 </div>
                 <Header />
-                <About />
+                <About refAbout={this.refAbout} />
                 <Gallery refGallery={this.refGallery} />
                 <Generator refGenerator={this.refGenerator} />
                 {/* <Advantage /> */}

@@ -6,7 +6,7 @@ import AboutMS from './AboutMS/AboutMS'
 class About extends Component {
     render() {
         return (
-            <div className={styles.about}>
+            <div ref={this.props.refAbout}  className={styles.about}>
                 <Banner/>
                 <AboutMS />
             </div>
