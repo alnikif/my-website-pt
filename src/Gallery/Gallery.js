@@ -37,7 +37,7 @@ export default class Gallery extends Component {
 
     }
     render() {
-      
+      const {onScrollContact}=this.props
         return (
             <div ref={this.props.refGallery} className={styles.mainContainer}>
                 <h3 className={styles.headerText}>Реальные люди - <span className={styles.orangeText}>реальные результаты !</span> </h3>
@@ -53,7 +53,7 @@ export default class Gallery extends Component {
                
                 </div>
                 <p className={styles.bannerText}>{slideContent[this.state.currentSlide].text}</p>
-                <button className={styles.bannerBtn}>
+                <button onClick={onScrollContact} className={styles.bannerBtn}>
                     {slideContent[this.state.currentSlide].click}
                 </button>
             </div>

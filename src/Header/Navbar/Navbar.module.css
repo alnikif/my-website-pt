@@ -2,14 +2,14 @@
    position: absolute;
    width: 50%;
    height: 100vh;
-   background-color: black;
-   opacity: .6;
+   background-color: rgba(0, 0, 0, .6);
+  
 }
 .menu{
     box-sizing: border-box;
     padding-left: 0;
     list-style-type: none;
-    padding-top: 25px;
+    padding-top: 35px;
 }
 li{
     padding: 7px ;

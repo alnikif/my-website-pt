@@ -7,7 +7,7 @@ class About extends Component {
     render() {
         return (
             <div ref={this.props.refAbout}  className={styles.about}>
-                <Banner/>
+                <Banner refOffer={this.props.refOffer} onScrollContact={this.props.onScrollContact}/>
                 <AboutMS />
             </div>
         )

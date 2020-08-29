@@ -16,9 +16,8 @@
 }
 .inpt{
     margin-bottom: 5px;
-    border: none;
-    background-color: white;
-    color: black;
+    border: 1px solid rgba(255, 69, 0, .6);
+    background-color: #0C0F13;
     width: 90%;
     height: 30px;
     font-size: 11px;

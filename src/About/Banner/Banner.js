@@ -32,9 +32,9 @@ export default class Banner extends Component {
 
     }
     render() {
-      
+      const {onScrollContact}=this.props
         return (
-            <div className={styles.container}>
+            <div ref={this.props.refOffer} className={styles.container}>
                 <span className={styles.mainHeader}>Выбери для себя направление</span>
                 <button onClick={this.handleClickLeft} className={classnames(styles.btn) }>
                     <i className='fa fa-angle-left'/>
@@ -46,7 +46,7 @@ export default class Banner extends Component {
                 <div className={styles.content} style={{backgroundImage: `url(${slideContent[this.state.currentSlide].src})`}}>
                 </div>
                 <p className={styles.bannerText}>{slideContent[this.state.currentSlide].text}</p>
-                <button className={styles.bannerBtn}>
+                <button onClick={onScrollContact} className={styles.bannerBtn}>
                     {slideContent[this.state.currentSlide].click}
                 </button>
             </div>

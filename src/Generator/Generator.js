@@ -32,7 +32,7 @@ export default class Generator extends Component {
                             <Formik 
                                 initialValues={{
                                     test:'',
-                                    sportType:'pl'
+                                    sportType:'atl'
                                 }}
                                 onSubmit={()=>{
                                    
@@ -46,29 +46,33 @@ export default class Generator extends Component {
                                     handleSubmit
                                 })=>{
                                     handleChange=e=>{(
-                                      
-                                      console.log(values.powerlifting)
-                                        
-                                        
+                                      console.log(values.sportType)
                                     )}
                                     return (
                                         <Form >
-                                            <Field name='test' type='text'/>
-                                  
                                                 <Field as="select" name="sportType">
-                                                    <option value="pl">Powerlifting</option>
-                                                    <option value="atl">Athleticism </option>
-                                                </Field>
-                                           
-                                               
+                                                    <option value="pl">Пауэрлифтинг</option>
+                                                    <option value="atl">Атлетическая гимнастика</option>
+                                                </Field><br/>
+                                                {values.sportType==='atl'? 
+                                                  <Field as="select" name="test">
+                                                  <option value="atlTop">Верхняя часть тела</option>
+                                                  <option value="atlBottom">Ноги</option>
+                                                </Field> :   
+                                                <Field as="select" name="test2">
+                                                    <option value="squat">Приседания со штангой</option>
+                                                    <option value="bp">Жим штанги лёжа</option>
+                                                    <option value="dl">Становая тяга</option>
+                                                </Field>}<br/>
+                                                {values.test==='atlBottom'&&
+                                                <Field name='a' value='Приседания со штангой'/>}
+
                                             <button onClick={handleChange} type='submit' className={styles.btn}>Click</button>
                                     </Form>  
 
                                     )
                                 }}
                                 />
-                            
-                        
                         </div>
                          
                     </div>

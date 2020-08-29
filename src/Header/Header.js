@@ -9,7 +9,7 @@ class Header extends Component {
             <div className={styles.header}>
                 <div className={styles.blackWraper}>
                 <div className={styles.content}>
-                    <HeaderText/>
+                    <HeaderText onScrollContact={this.props.onScrollContact} onScrollAbout={this.props.onScrollAbout}/>
                 </div>
                 </div>
                
