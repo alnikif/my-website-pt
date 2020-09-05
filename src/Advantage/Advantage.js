@@ -9,7 +9,7 @@ export default class Advantage extends Component {
                 <div className={styles.content}>
                     <p className={styles.title}>Тренируясь со мной , Вы гарантировано :</p>
                     <div className={styles.leftSide}>
-                        <div className={classNames(styles.fastStart, styles.orangeBlock)}>
+                        <div className={classNames(styles.fastStart, styles.block)}>
                             <div className={styles.iconWraper}>
                                 <div className={classNames(styles.icon, styles.iconFastStart)}>
                                     <div className={styles.blackNet}></div>
@@ -17,7 +17,7 @@ export default class Advantage extends Component {
                                 <p className={styles.text}>Быстро адаптируетесь к тренировкам!</p>
                                 </div>
                         </div>
-                        <div className={classNames(styles.fastStart, styles.grayBlock)}>
+                        <div className={classNames(styles.muscles, styles.block)}>
                             <div className={styles.iconWraper}>
                                 <div className={classNames(styles.icon, styles.iconMuscles)}>
                                     <div className={styles.blackNet}></div>
@@ -25,7 +25,7 @@ export default class Advantage extends Component {
                                 <p className={styles.text}>Нарастите мышечную массу!</p>
                             </div>
                         </div>
-                        <div className={classNames(styles.weightLoss, styles.orangeBlock)}>
+                        <div className={classNames(styles.weightLoss, styles.block)}>
                             <div className={styles.iconWraper}>
                                 <div className={classNames(styles.icon, styles.iconWeightLoss)}>
                                     <div className={styles.blackNet}></div>
@@ -35,7 +35,7 @@ export default class Advantage extends Component {
                         </div>
                     </div>
                     <div className={styles.rightSide}>
-                       <div className={classNames(styles.strong, styles.orangeBlock)}>
+                       <div className={classNames(styles.strong, styles.block)}>
                             <div className={styles.iconWraper}>
                                 <div className={classNames(styles.icon, styles.iconStrong)}>
                                     <div className={styles.blackNet}></div>
@@ -45,7 +45,7 @@ export default class Advantage extends Component {
                             
                             
                        </div>
-                        <div className={classNames(styles.nutrition, styles.grayBlock)}>
+                        <div className={classNames(styles.nutrition, styles.block)}>
                             <div className={styles.iconWraper}>
                                 <div className={classNames(styles.icon, styles.iconNutrition)}>
                                     <div className={styles.blackNet}></div>
@@ -53,7 +53,7 @@ export default class Advantage extends Component {
                                 <p className={styles.text}>Освоите правильноe питание!</p>
                             </div>
                         </div>
-                        <div className={classNames(styles.fastSkill, styles.orangeBlock)}>
+                        <div className={classNames(styles.fastSkill, styles.block)}>
                             <div className={styles.iconWraper}>
                                 <div className={classNames(styles.icon, styles.iconSkill)}>
                                     <div className={styles.blackNet}></div>

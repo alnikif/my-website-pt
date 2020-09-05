@@ -2,6 +2,8 @@
    width: 100%;
    min-height: 370px;
    position: relative;
+   /* background-image: url('./images/ket1.jpg'); */
+   background-size: contain;
 }
 .darkWraper{
     height:370px ;
@@ -48,10 +50,6 @@ label{
     height: 30px;
     padding-left: 10px;
 }
-/* .atBenchPress:active:after{
-    content: 'sdfkdjfh';
-    background-color: paleturquoise;
-} */
 .btn{
     margin: 15px auto;
     width: 30%;
@@ -110,6 +108,6 @@ label{
         width: 1px;
     }
     100%{
-        width: 360px;
+        width: 350px;
     }
 }

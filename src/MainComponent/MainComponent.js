@@ -67,7 +67,7 @@ class MainComponent extends Component {
                 <About refAbout={this.refAbout} refOffer={this.refOffer} onScrollContact={this.scrollToContact} />
                 <Gallery refGallery={this.refGallery} onScrollContact={this.scrollToContact} />
                 <Generator refGenerator={this.refGenerator} />
-                {/* <Advantage /> */}
+                <Advantage />
                 <Footer refContact={this.refContact}/>
             </div>
             

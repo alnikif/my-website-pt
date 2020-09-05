@@ -34,23 +34,20 @@
     float: right;
 }
 .text{
-    padding: 5px 10px;
-    font-size: 12px;
+    padding: 10px;
+    font-size: 10px;
     display: inline-block;
     width: 85%;
     height: 75px;
     margin-left: 15%;
-    text-align: end;
+    text-align: center;
     text-shadow: none;
     color: white;
    
 }
 .strong p, .fastSkill p, .nutrition p{
-    margin-left: 0;
-    text-align: start;
+    margin-left: 0;  
 }
-
-
 .title{
     color: white;
     margin: 0;
@@ -63,16 +60,16 @@
     font-weight: 600;
 }
 
-.orangeBlock{
+.block{
 
-    background-color: orangered; 
-    /* opacity: .9; */
-    
+    background-color: rgba(255, 69, 0, .6);
+    border-radius: 10px;    
+    height: 60px;
+    margin-top:10px;
 }
+
 .iconWraper{
     position: relative;
-    height: 75px;
-    width: 100%;
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
 }
@@ -80,11 +77,10 @@
     position: absolute;
     right: 0;
     top: 0;
-    /* opacity: .9; */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 75px;
-    width: 26px;
+    height: 60px;
+    width: 20px;
     padding: 0;
    
 }
